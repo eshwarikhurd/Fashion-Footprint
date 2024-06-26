@@ -1,0 +1,204 @@
+    
+    #header{
+        font-size: 20px;
+        font-style: oblique;
+        border-style: double;
+        border-width: 2px;
+        border-color: rgb(137, 228, 137);
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-top: 19px;
+        margin-right: 20px;
+        border: rgb(62, 119, 62);
+        border-radius: 5px;
+    }
+    body{
+        background: rgb(184, 252, 184);
+        
+    }
+    .container{
+        padding: 10px 10%;
+    }
+    .h11{
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    nav{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: rgb(124, 207, 124);
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .pbody{
+        height: 100%;
+        background-image: url("https://cdn.thevoiceoffashion.com/article_images/63918878589c6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    /*-------------about-------------------------------------------------------*/
+    #about{
+        padding: 80px 0;
+        color: black;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footprint{
+        width: 100%;
+        height: 450px;
+    }
+    .about-col-1{
+        flex-basis: 40%;
+    }
+    .about-col-2{
+        flex-basis: 55%;
+    }
+    /*-------------------------------services----------------------------------------*/
+    #services{
+        padding: 30px 0;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+    .services-list div{
+        background: palegreen;
+        padding: 40px;
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 6px;
+        transition: background 0.5s, transform 0.5s;
+    }
+    .services-list div i{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .services-list div h3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .services-list div:hover{
+        background: lightgreen;
+        transform: translateY(-10px);
+    }
+     /*--------------------------------------------------------------------*/
+    .fbutton{
+        background-color: rgb(0, 200, 83);
+        color: black;
+        border: none;
+        height: 40px;
+        width: 150px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 40px;
+        margin-left:40px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        font-weight: bold;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .nfootprint{
+        width: 60%;
+        height: 450px;
+    }
+    .subbutton:hover{
+        opacity: 0.8;
+    }
+     /*-------------------------------contact----------------------------------------*/
+     .contact-left{
+        flex-basis: 40%;
+     }
+     .contact-left img{
+        border-radius: 40px;
+     }
+     .contact-left img:hover{
+        opacity: 0.8;
+        transform: translateY(-7px);
+        transition: tranform 0.5s;
+     }
+     .contact-right{
+
+        flex-basis: 55%;
+     }
+     .nfootprint{
+        width: 100%;
+        height: 400px;
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: palegreen;
+        padding: 15px;
+        margin: 15px 0;
+        color: black;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    form .sbutton{
+        background-color: rgb(0, 200, 83);
+        padding: 14px 60px;
+        color: black;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        background: palegreen;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    .copyright i{
+        color: #ff004f;
+    }
