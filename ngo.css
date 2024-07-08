@@ -4,19 +4,21 @@
     border-style: double;
     border-width: 2px;
     border-color: rgb(119, 180, 204);
-
-}
-
-body{
-    background: lightskyblue;
-}
-.pbody{
     height: 100%;
     background-image: url("https://www.hercircle.in/hcm/EngageImage/4AE0AC99-BC0F-4448-80A5-EAB64E83E832/D/A1A5FDEB-665A-4290-BCA1-E7A42F0F1DC6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+}
+
+body{
+    background: lightskyblue;
+}
+.pbody{
+    margin-top: 2%;
+    font-size: 50px;
+    float: left;
 }
 /*-----------------------------*/
 #services{

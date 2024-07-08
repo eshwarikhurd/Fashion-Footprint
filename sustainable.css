@@ -4,20 +4,23 @@
     border-style: double;
     border-width: 2px;
     border-color: bisque;
-
-}
-
-body{
-    background: beige;
-}
-.pbody{
     height: 100%;
     background-image: url("https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/01/Fashion-Footprint.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+
 }
+.pbody h2{
+    margin-top: 20%;
+    font-size: 60px;
+    float: right;
+}
+body{
+    background: beige;
+}
+
 /*-----------------------------*/
 #services{
     padding: 20px 0;
