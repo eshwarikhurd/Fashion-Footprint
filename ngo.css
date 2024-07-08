@@ -3,16 +3,16 @@
     font-style: oblique;
     border-style: double;
     border-width: 2px;
-    border-color: bisque;
+    border-color: rgb(119, 180, 204);
 
 }
 
 body{
-    background: beige;
+    background: lightskyblue;
 }
 .pbody{
     height: 100%;
-    background-image: url("https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/01/Fashion-Footprint.jpg");
+    background-image: url("https://www.hercircle.in/hcm/EngageImage/4AE0AC99-BC0F-4448-80A5-EAB64E83E832/D/A1A5FDEB-665A-4290-BCA1-E7A42F0F1DC6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,8 +34,8 @@ body{
     margin-top: 20px;
 }
 .services-list div{
-    background: bisque;
-    padding: 30px;
+    background: rgb(113, 171, 207);
+    padding: 20px;
     font-size: 15px;
     font-weight: 200;
     border-radius: 6px;
@@ -43,7 +43,7 @@ body{
 }
 .services-list div i{
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .services-list div h3{
     font-size: 30px;
@@ -54,12 +54,12 @@ body{
     font-size: 17px;
 }
 .services-list div:hover{
-    background: rgb(255, 218, 172);
+    background: lightblue;
     transform: translateY(-10px);
 }
  /*--------------------------------------------------------------------*/
 .fbutton{
-    background-color: burlywood;
+    background-color: rgb(93, 158, 184);
     color: black;
     border: none;
     height: 40px;
