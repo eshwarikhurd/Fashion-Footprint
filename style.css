@@ -8,6 +8,9 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+    html{
+        scroll-behavior: smooth;
+    }
     .logo{
         width: 50px;
         height: 50px;
@@ -73,9 +76,10 @@
         color: black;
     }
     .row{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
     }
     .footprint{
         width: 100%;
@@ -86,6 +90,10 @@
     }
     .about-col-2{
         flex-basis: 55%;
+    }
+    .about-col-2 p{
+        font-size: 17px;
+        font-family: monospace;
     }
     /*-------------------------------services----------------------------------------*/
     #services{
@@ -135,6 +143,8 @@
         display: inline-block;
         text-decoration: none;
         margin-top: 20px;
+        margin-bottom: 10%;
+        
     }
     .nfootprint{
         width: 60%;
@@ -203,7 +213,74 @@
         font-weight: 300;
         margin-top: 5px;
     }
-
     .copyright i{
         color: #ff004f;
+    }
+    /*--------------------------------for small screen-----------------*/
+    nav .uln .fa-solid{
+        display: none;
+    }
+    @media only screen and (max-width: 600px){
+        .pbody{
+            background-image: url(https://asillo.com/wp-content/uploads/2022/03/Scholastic-Choices-carbon-footprint-cover-1306x1536.jpg);
+        }
+        .logo{
+            display: none;
+            width: 30px;
+        height: 30px;
+        }
+        .h11{
+            font-size: 25px ;
+
+        }
+        .container{
+            background: url(https://payload.cargocollective.com/1/1/44246/558856/4_reuse%20recycle_o.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+        }
+        nav{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+        nav .fa-solid{
+            padding-left: 30px;
+            padding-right: 0%;
+            float: left;
+        }
+        .logo{
+            margin-top: 32px;
+        }
+        nav .uln .fa-solid{
+            display: block;
+            font-size: 25px;
+
+        }
+        nav ul{
+            background: palegreen;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+        }
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+        
+    }
+    .copyright{
+        font-size: 14px;
     }

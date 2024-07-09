@@ -17,13 +17,16 @@
             <h1 class="h11">
                 Fashion Footprint
             </h1>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+            <div class="uln">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu"></i>
+        </div>
         </nav>
     </div>
 </div>
@@ -39,22 +42,25 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Us</h1>
-                <p>Hello this is my new website Hello this is my new websiteHello this is my new website
-                    Hello this is my new websiteHello this is my new websitevHello this is my new websitev
-                    Hello this is my new website</p>
+                <p>The textile and fashion industry is the second most polluting industry in the world, responsible for 
+                    between 8 to 10% of total carbon emissions 
+                    and 20% of global wastewater, with a predicted increase of 50% in greenhouse gas emissions by 2030. We are infact not only responsible 
+                    to build a cement but also a non-ecofriendly textile forest wasting tons of fabrics, releasing dyes into soil and water resources.<br><br>
+                    Our aim is to enlighten our audience and their impact on the environment with the help of their <strong>fashion footprint</strong>
+                    and thereby suggest measures to creating a sustainable lifestyle!<br>Let us together protect, nurture & flourish our planet!</p>
             </div>
         </div>
     </div>
 </div>
 <!--------------------------------Services--------------------->
 <div id="services">
-    <div class="container">
+    <div class="container2">
         <h1 class="sub-title">Our Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-shoe-prints"></i>
                 <h3>Fashion Footprint Calculator</h3>
-                <p>Calculate your fashion footprint here!</p>
+                <p>Calculate your fashion footprint here!<br><br><br></p>
                 <button class="fbutton">
                     <a href="https://www.ethical-clothing.com/fashion-calculator/" target="_blank">
                         Fashion Footprint Calulator
@@ -64,7 +70,7 @@
             <div>
                 <i class="fa-solid fa-tags"></i>
                 <h3>Sustainable Brands</h3>
-                <p>Brands we'd like you to consider the next time you shop!</p>
+                <p>Brands we'd like you to consider the next time you shop!<br><br><br><br></p>
                 <button class="fbutton">
                     <a href="file:///C:/Users/muk/Desktop/html-css/fashion%20footprint/sustainable-brands.html" >
                         Sustainable Brands
@@ -99,7 +105,7 @@
             </div>
             <div class="contact-right"><br>
                 <h3>Drop us a message with your fashion footprint score!</h3>
-                <form>
+                <form name="submit-to-google-sheet">
                     <label>Name</label>
                     <br>
                     <input type="text" name="Name" placeholder="Your name" required>
@@ -114,6 +120,7 @@
                     <button type="submit" class="sbutton" required>Submit</button>
                     <br>
                 </form>
+                
             </div>
         </div>
     </div>
@@ -121,5 +128,26 @@
         <p>Copyright <i class="fa-regular fa-copyright"></i> Eshwari. Made with <i class="fa-solid fa-heart"></i> by Eshwari Khurd</p>
     </div>
 </div>
+
+<script>
+    var uln = document.getElementById("uln")
+    function openmenu(){
+        uln.style.right= "0";
+    }
+    function closemenu(){
+        uln.style.right= "-250px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxALn9JOoTDl-SXcPVVlwJsqsWp_P_RWAnb9rRn6XP3U8_U9llqSYAbH9nc-n5n_Qw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
