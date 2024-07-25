@@ -1,0 +1,92 @@
+#header{
+    font-size: 20px;
+    font-style: oblique;
+    border-style: double;
+    border-width: 2px;
+    border-color: bisque;
+    height: 100%;
+    background-image: url("https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/01/Fashion-Footprint.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+.pbody h2{
+    margin-top: 20%;
+    font-size: 60px;
+    float: right;
+}
+body{
+    background: beige;
+}
+
+/*-----------------------------*/
+#services{
+    padding: 20px 0;
+}
+.sub-title{
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services-list{
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.services-list div{
+    background: bisque;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 6px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div p{
+    font-size: 17px;
+}
+.services-list div:hover{
+    background: rgb(255, 218, 172);
+    transform: translateY(-10px);
+}
+ /*--------------------------------------------------------------------*/
+.fbutton{
+    background-color: burlywood;
+    color: black;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-left:40px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.nfootprint{
+    width: 60%;
+    height: 450px;
+}
+.fbutton:hover{
+    opacity: 0.9;
+}
+.fbutton a{
+    text-decoration: none;
+    font-size: small;
+    color: rgb(0, 0, 0);
+}
