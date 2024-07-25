@@ -1,0 +1,90 @@
+#header{
+    font-size: 20px;
+    font-style: oblique;
+    border-style: double;
+    border-width: 2px;
+    border-color: rgb(119, 180, 204);
+    height: 100%;
+    background-image: url("https://www.hercircle.in/hcm/EngageImage/4AE0AC99-BC0F-4448-80A5-EAB64E83E832/D/A1A5FDEB-665A-4290-BCA1-E7A42F0F1DC6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+body{
+    background: lightskyblue;
+}
+.pbody{
+    font-size: 50px;
+    float: left;
+}
+/*-----------------------------*/
+#services{
+    padding: 20px 0;
+}
+.sub-title{
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services-list{
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.services-list div{
+    background: rgb(113, 171, 207);
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 6px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div p{
+    font-size: 17px;
+}
+.services-list div:hover{
+    background: lightblue;
+    transform: translateY(-10px);
+}
+ /*--------------------------------------------------------------------*/
+.fbutton{
+    background-color: rgb(93, 158, 184);
+    color: black;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-left:40px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.nfootprint{
+    width: 60%;
+    height: 450px;
+}
+.fbutton:hover{
+    opacity: 0.9;
+}
+.fbutton a{
+    text-decoration: none;
+    font-size: small;
+    color: rgb(0, 0, 0);
+}
