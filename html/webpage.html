@@ -1,153 +1,187 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="Fashion" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Fashion Footprint
-        </title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="https://kit.fontawesome.com/aef12b5f6b.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Footprint</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aef12b5f6b.js" crossorigin="anonymous"></script>
+</head>
 <body>
-<div id="header">
-    <div class="container">
-        <img src="https://payload.cargocollective.com/1/1/44246/558856/4_reuse%20recycle_o.jpg" class="logo">
+
+<!-- NAVBAR -->
+<header id="header">
+    <div class="container nav-container">
+        <div class="logo-wrap">
+            <i class="fa-solid fa-leaf logo-icon"></i>
+            <span class="logo-text">Fashion Footprint</span>
+        </div>
         <nav>
-            <h1 class="h11">
-                Fashion Footprint
-            </h1>
-            <div class="uln">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <li class="close-btn"><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </div>
+            <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
         </nav>
     </div>
-</div>
-<p class="pbody">
+</header>
 
-</p>
-<!------------------------about--------------------->
-<div id="About">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">The planet is paying the price</p>
+        <h1 class="hero-title">Your Fashion<br><em>Has a Footprint</em></h1>
+        <p class="hero-sub">The fashion industry produces 10% of global carbon emissions.<br>Let's change that — one wardrobe at a time.</p>
+        <a href="#about" class="hero-btn">Learn More <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="https://payload.cargocollective.com/1/1/44246/558856/4_reuse%20recycle_o.jpg" alt="Footprint" class="footprint">
+        <div class="section-label">Who We Are</div>
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Sustainable fashion" class="about-img">
+                <div class="about-badge">
+                    <span class="badge-num">8–10%</span>
+                    <span class="badge-text">of global carbon emissions</span>
+                </div>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Us</h1>
-                <p>The textile and fashion industry is the second most polluting industry in the world, responsible for 
-                    between 8 to 10% of total carbon emissions 
-                    and 20% of global wastewater, with a predicted increase of 50% in greenhouse gas emissions by 2030. We are infact not only responsible 
-                    to build a cement but also a non-ecofriendly textile forest wasting tons of fabrics, releasing dyes into soil and water resources.<br><br>
-                    Our aim is to enlighten our audience and their impact on the environment with the help of their <strong>fashion footprint</strong>
-                    and thereby suggest measures to creating a sustainable lifestyle!<br>Let us together protect, nurture & flourish our planet!</p>
+            <div class="about-text">
+                <h2 class="section-title">Fast Fashion is <em>Costing the Earth</em></h2>
+                <p>The textile and fashion industry is the second most polluting industry in the world, responsible for 8–10% of total carbon emissions and 20% of global wastewater — with a predicted 50% increase in greenhouse gas emissions by 2030.</p>
+                <p>Tons of fabrics are wasted, harmful dyes are released into soil and water, and synthetic fibres shed microplastics into our oceans with every wash.</p>
+                <p>Our aim is to enlighten our audience about their impact on the environment through their <strong>fashion footprint</strong> — and suggest practical measures toward a sustainable lifestyle.</p>
+                <p class="about-cta-text">Let us together protect, nurture & flourish our planet 🌿</p>
             </div>
         </div>
     </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+    <div class="stat">
+        <span class="stat-num">92M</span>
+        <span class="stat-label">tonnes of textile waste/year</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num">20%</span>
+        <span class="stat-label">of global wastewater</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num">3,000L</span>
+        <span class="stat-label">water to make one cotton shirt</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num">+50%</span>
+        <span class="stat-label">projected emissions by 2030</span>
+    </div>
 </div>
-<!--------------------------------Services--------------------->
-<div id="services">
+
+<!-- SERVICES -->
+<section id="services">
     <div class="container">
-        <h1 class="sub-title">Our Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-shoe-prints"></i>
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-shoe-prints"></i></div>
                 <h3>Fashion Footprint Calculator</h3>
-                <p>Calculate your fashion footprint here!<br><br><br></p>
-                <button class="fbutton">
-                    <a href="https://www.ethical-clothing.com/fashion-calculator/" target="_blank">
-                        Fashion Footprint Calulator
-                    </a>
-                </button>
+                <p>Find out how much your shopping habits are costing the planet. Calculate your personal fashion footprint in minutes.</p>
+                <a href="https://www.ethical-clothing.com/fashion-calculator/" target="_blank" class="card-btn">Calculate Now <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div>
-                <i class="fa-solid fa-tags"></i>
+            <div class="card card-highlight">
+                <div class="card-icon"><i class="fa-solid fa-tags"></i></div>
                 <h3>Sustainable Brands</h3>
-                <p>Brands we'd like you to consider the next time you shop!<br><br><br><br></p>
-                <button class="fbutton">
-                    <a href="sustainable-brands.html" >
-                        Sustainable Brands
-                    </a>
-                </button>
+                <p>Discover Indian eco-friendly brands that are making fashion beautiful and responsible — without harming the planet.</p>
+                <a href="sustainable-brands.html" class="card-btn">Explore Brands <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div>
-                <i class="fa-solid fa-building-ngo"></i>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-building-ngo"></i></div>
                 <h3>Active NGOs</h3>
-                <h4>
-                Donate. Upcycle. Recycle.
-                </h4>
-                <p>Check out few of the active NGOs already working for the cause!</p>
-                <button class="fbutton">
-                    <a href="ngos.html">
-                        Active NGOs
-                    </a>
-                </button>
+                <p>Donate. Upcycle. Recycle. Connect with organisations already working hard for sustainable fashion and communities.</p>
+                <a href="ngos.html" class="card-btn">Meet the NGOs <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
-</div>
-<!--------------------------------Contact--------------------->
-<div id="contact">
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
     <div class="container">
-        <div class="row">
+        <div class="contact-grid">
             <div class="contact-left">
-                <h1 class="sub-title">
-                    Fashion Consumers Or Planet Sacrifiers?
-                </h1>
-                <img src="https://immago.com/wp-content/uploads/2023/01/fashion-footprint-social.jpg" alt="Footprint" class="nfootprint">
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Fashion Consumers<br>or <em>Planet Saviours?</em></h2>
+                <p>Tell us your fashion footprint score! We'd love to hear from you and help you on your journey to more sustainable choices.</p>
+                <div class="contact-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&q=80" alt="Fashion" class="contact-img">
+                </div>
             </div>
-            <div class="contact-right"><br>
-                <h3>Drop us a message with your fashion footprint score!</h3>
-                <form name="submit-to-google-sheet">
-                    <label>Name</label>
-                    <br>
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <br>
-                    <label>Email</label>
-                    <br>
-                    <input type="email" name="Email" placeholder="email id" required>
-                    <br>
-                    <label>Message</label><br>
-                    <textarea name="Message" rows="6" placeholder="Write your message here"></textarea>
-                    <br>
-                    <button type="submit" class="sbutton" required>Submit</button>
-                    <br>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" id="contact-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="Name" placeholder="e.g. Eshwari Khurd" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="Email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea name="Message" rows="5" placeholder="Share your footprint score or thoughts..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <p id="form-msg" class="form-msg"></p>
                 </form>
-                
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa-regular fa-copyright"></i> Eshwari. Made with <i class="fa-solid fa-heart"></i> by Eshwari Khurd</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <i class="fa-solid fa-leaf"></i> Fashion Footprint
+        </div>
+        <p class="footer-tagline">Wear Less. Care More. Live Sustainably.</p>
+        <p class="copyright">Made with <i class="fa-solid fa-heart"></i> by Eshwari Khurd &nbsp;|&nbsp; <i class="fa-regular fa-copyright"></i> 2024</p>
     </div>
-</div>
+</footer>
 
 <script>
-    var uln = document.querySelector(".uln ul")
-    function openmenu(){
-        uln.style.right= "0";
-    }
-    function closemenu(){
-        uln.style.right= "-250px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxALn9JOoTDl-SXcPVVlwJsqsWp_P_RWAnb9rRn6XP3U8_U9llqSYAbH9nc-n5n_Qw/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
+    // Mobile menu
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-260px"; }
+
+    // Contact form
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxALn9JOoTDl-SXcPVVlwJsqsWp_P_RWAnb9rRn6XP3U8_U9llqSYAbH9nc-n5n_Qw/exec';
+    const form = document.getElementById('contact-form');
+    const msg = document.getElementById('form-msg');
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => {
+                msg.textContent = '✓ Message sent! Thank you.';
+                msg.style.color = '#2d6a4f';
+                form.reset();
+            })
+            .catch(() => {
+                msg.textContent = 'Something went wrong. Please try again.';
+                msg.style.color = '#c0392b';
+            });
+    });
+</script>
 </body>
 </html>
