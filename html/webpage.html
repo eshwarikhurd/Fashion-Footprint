@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="Fashion" content="IE=edge">
@@ -23,9 +23,9 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </div>
         </nav>
     </div>
@@ -54,7 +54,7 @@
 </div>
 <!--------------------------------Services--------------------->
 <div id="services">
-    <div class="container2">
+    <div class="container">
         <h1 class="sub-title">Our Services</h1>
         <div class="services-list">
             <div>
@@ -72,7 +72,7 @@
                 <h3>Sustainable Brands</h3>
                 <p>Brands we'd like you to consider the next time you shop!<br><br><br><br></p>
                 <button class="fbutton">
-                    <a href="file:///C:/Users/muk/Desktop/html-css/fashion%20footprint/sustainable-brands.html" >
+                    <a href="sustainable-brands.html" >
                         Sustainable Brands
                     </a>
                 </button>
@@ -85,7 +85,7 @@
                 </h4>
                 <p>Check out few of the active NGOs already working for the cause!</p>
                 <button class="fbutton">
-                    <a href="file:///C:/Users/muk/Desktop/html-css/fashion%20footprint/ngos.html">
+                    <a href="ngos.html">
                         Active NGOs
                     </a>
                 </button>
@@ -130,7 +130,7 @@
 </div>
 
 <script>
-    var uln = document.getElementById("uln")
+    var uln = document.querySelector(".uln ul")
     function openmenu(){
         uln.style.right= "0";
     }
