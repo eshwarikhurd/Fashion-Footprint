@@ -492,6 +492,20 @@ footer {
 .copyright i { color: #e76f51; }
 
 /* ===== RESPONSIVE ===== */
+@media (min-width: 601px) {
+    .menu-icon { display: none !important; }
+    #sidemenu {
+        position: static !important;
+        height: auto !important;
+        width: auto !important;
+        flex-direction: row !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        right: auto !important;
+    }
+}
+
 @media (max-width: 900px) {
     .about-grid, .contact-grid, .cards-grid { grid-template-columns: 1fr; }
     .stats-strip { grid-template-columns: repeat(2, 1fr); }
